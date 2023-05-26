@@ -65,7 +65,7 @@ dl<-function(x,y,burn=5000,nmc=5000,thin=1,hyper=1/2){
   beta=rep(0,p)
   hi=rep(1,p)
   ti=1
-  betamatrix<-matrix(rep(NA,nmc*p),nrow=5000)
+  betamatrix<-matrix(rep(NA,nmc*p),nrow=nmc)
 
   #Niter iterations
   for(i in 1:(burn+nmc)){
